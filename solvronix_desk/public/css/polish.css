@@ -77,12 +77,7 @@ a {
 }
 
 /* ── 3. CARDS — border + layered shadow + hover lift ───────────── */
-.widget,
-.frappe-card {
-  border: 1px solid var(--st-card-border);
-  box-shadow: var(--st-shadow-sm);
-  background-clip: padding-box;
-}
+
 
 .widget.dashboard-widget-box:hover,
 .widget.chart-widget-box:hover,

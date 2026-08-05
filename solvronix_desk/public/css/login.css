@@ -61,11 +61,12 @@
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    background: linear-gradient(
+    /* background: linear-gradient(
       135deg,
       var(--st-brand) 0%,
       color-mix(in srgb, var(--st-brand) 45%, #000) 100%
-    ) !important;
+    ) !important; */
+     background-color: #E2E8F0 !important;
     background-size: 200% 200% !important;
     animation: st-login-gradient 10s ease infinite alternate !important;
     display: flex !important;
@@ -438,11 +439,11 @@ body:has(.for-forgot) .page-header-wrapper {
   .for-signup,
   .for-email-login,
   .for-login-with-email-link {
-    background: linear-gradient(
+    /* background: linear-gradient(
       135deg,
       var(--st-brand, #1B3F7E) 0%,
       color-mix(in srgb, var(--st-brand, #1B3F7E) 45%, #000) 100%
-    ) !important;
+    ) !important; */
     background-size: 200% 200% !important;
     animation: st-login-gradient 10s ease infinite alternate !important;
     min-height: 100vh !important;
@@ -451,4 +452,14 @@ body:has(.for-forgot) .page-header-wrapper {
     align-items: center !important;
     justify-content: center !important;
   }
+}
+.page-card-head h4 {
+  display: none !important;
+}
+.for-login .page-card-actions::after {
+display: none !important;
+}
+ 
+.social-logins.text-center {
+display: none !important;
 }
