@@ -470,7 +470,7 @@ button.btn-primary:active {
   border-left: 4px solid var(--st-accent) !important;
   padding-left: 12px !important;
   padding-bottom: 6px !important;
-  color: var(--st-dark) !important;
+  color: #000000 !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em;
@@ -2198,5 +2198,8 @@ html[dir="rtl"] #st-lang-dropdown {
     max-height: 85px !important;
     width: auto;
 }
-
+#navbar-breadcrumbs a {
+    margin-right: 10px;
+    color: black !important;
+}
 

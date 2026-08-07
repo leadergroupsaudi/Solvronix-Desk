@@ -1261,25 +1261,3 @@
     });
   }
 })();
-const gradients = [
-    "linear-gradient(135deg, #667eea, #764ba2)",
-    "linear-gradient(135deg, #ff9a9e, #fad0c4)",
-    "linear-gradient(135deg, #43cea2, #185a9d)",
-    "linear-gradient(135deg, #11998e, #38ef7d)",
-    "linear-gradient(135deg, #fc5c7d, #6a82fb)",
-    "linear-gradient(135deg, #36d1dc, #5b86e5)",
-    "linear-gradient(135deg, #f7971e, #ffd200)",
-    "linear-gradient(135deg, #ff6a00, #ee0979)",
-    "linear-gradient(135deg, #00c6ff, #0072ff)",
-    "linear-gradient(135deg, #7f00ff, #e100ff)",
-    "linear-gradient(135deg, #00b09b, #96c93d)",
-    "linear-gradient(135deg, #4facfe, #00f2fe)"
-];
- 
-document.querySelectorAll('.widget.number-widget-box').forEach(widget => {
-  alert(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-    const gradient = gradients[Math.floor(Math.random() * gradients.length)];
-    widget.style.background = gradient;
-    widget.style.color = "#fff";
-    widget.style.borderRadius = "16px";
-});
