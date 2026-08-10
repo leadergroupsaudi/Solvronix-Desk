@@ -41,6 +41,9 @@ textarea,
   --st-accent-600:   #e06e00;
   --st-accent-hover: #e06e00;
   --st-page-bg:      #f5f6fa;
+
+  /* ── Banner image (fallback default — overridden by api.py) ── */
+  --st-banner-image: none;
 }
 
 /* ── color-mix() upgrades — only applied when the browser supports it ── */
@@ -1423,17 +1426,12 @@ body.st-has-toolbar .page-container {
   padding-top: 36px !important;
 }
 /* Legacy v15 selectors — kept for compatibility */
-/* body.st-has-toolbar .navbar,
+body.st-has-toolbar .navbar,
 body.st-has-toolbar header.navbar {
-  top: 36px !important;
-} */
-
-body.st-has-toolbar .navbar, body.st-has-toolbar header.navbar {
-    /* top: 36px !important; */
-    height: 100px;
-    background-image: url(https://epmstaging.foxerp.com/assets/foxerp_epm/images/EPM_header_en.jpg);
-    background-size: cover;
-    margin-bottom: -45px;
+  background-image: var(--st-banner-image, none);
+  background-size: cover;
+  height: 100px !important;
+  margin-bottom: -45px;
 }
 
 #st-top-toolbar .st-tb-left {

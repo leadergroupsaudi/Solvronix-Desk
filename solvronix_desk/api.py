@@ -1,4 +1,5 @@
 import frappe
+from urllib.parse import quote
 
 # Site-default font size name → root font-size. Rem-based sizing scales with it.
 FONT_SIZE_CSS = {
@@ -21,11 +22,13 @@ def get_theme_css():
         brand  = s.brand_color  or "#1B3F7E"
         accent = s.accent_color or "#F57C00"
         font   = FONT_SIZE_CSS.get(getattr(s, "base_font_size", None) or "Default", "100%")
+        banner = f"url({frappe.utils.get_url(quote(s.banner_image))})" if getattr(s, "banner_image", None) else "none"
         css = f""":root {{
   --st-brand:   {brand};
   --st-accent:  {accent};
   --st-primary: var(--st-brand);
   --st-font-size: {font};
+  --st-banner-image: {banner};
   font-size: {font};
 }}"""
         return css

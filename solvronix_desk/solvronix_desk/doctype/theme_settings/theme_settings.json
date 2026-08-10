@@ -10,6 +10,7 @@
   "column_break_branding",
   "favicon",
   "tagline",
+  "banner_image",
   "section_colors",
   "brand_color",
   "column_break_colors",
@@ -56,6 +57,12 @@
    "fieldname": "tagline",
    "fieldtype": "Data",
    "label": "Tagline (optional)"
+  },
+  {
+   "description": "Background image for the top toolbar/navbar banner",
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image"
   },
   {
    "fieldname": "section_colors",
@@ -157,7 +164,7 @@
  ],
  "issingle": 1,
  "links": [],
- "modified": "2026-06-12 00:00:00.000000",
+ "modified": "2026-08-10 00:00:00.000001",
  "modified_by": "Administrator",
  "module": "Solvronix Desk",
  "name": "Theme Settings",
