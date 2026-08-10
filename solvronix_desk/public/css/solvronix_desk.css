@@ -1431,6 +1431,7 @@ body.st-has-toolbar header.navbar {
   background-image: var(--st-banner-image, none);
   background-size: cover;
   height: 100px !important;
+  margin-bottom: -45px;
 }
 
 #st-top-toolbar .st-tb-left {
