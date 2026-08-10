@@ -394,8 +394,8 @@ header.navbar {
 .navbar .navbar-nav > li > a,
 .navbar .navbar-right .icon-btn,
 .navbar .navbar-right svg {
-  color: var(--st-white) !important;
-  stroke: var(--st-white) !important;
+  color: #000000 !important;
+  stroke: #000000 !important;
 }
 
 .navbar .nav-link:hover,
