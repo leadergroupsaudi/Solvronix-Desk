@@ -792,7 +792,7 @@ html[data-theme="dark"] .desk-page > .page-head .st-breadcrumb {
 
 /* ── MODAL / DIALOG GRADIENT HEADER (CommitStreet) ──────────────────────────── */
 .modal-header {
-  background: linear-gradient(120deg, var(--st-dark) 0%, var(--st-dark-mid) 100%) !important;
+  background: var(--st-accent) !important;
   color: #fff !important;
   border-radius: var(--st-radius-lg) var(--st-radius-lg) 0 0 !important;
   border-bottom: none !important;
@@ -1428,7 +1428,7 @@ body.st-has-toolbar .page-container {
 /* Legacy v15 selectors — kept for compatibility */
 body.st-has-toolbar .navbar,
 body.st-has-toolbar header.navbar {
-  background-image: var(--st-banner-image, none);
+  background-image: url(https://suppliersurvey.foxerp.com/files/17f55d43-063b-49f7-8594-9e557eafc74a.png) !important;
   background-size: cover;
   height: 100px !important;
   margin-bottom: -45px;
