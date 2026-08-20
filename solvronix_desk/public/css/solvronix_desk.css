@@ -1428,7 +1428,7 @@ body.st-has-toolbar .page-container {
 /* Legacy v15 selectors — kept for compatibility */
 body.st-has-toolbar .navbar,
 body.st-has-toolbar header.navbar {
-  background-image: url(https://suppliersurvey.foxerp.com/files/17f55d43-063b-49f7-8594-9e557eafc74a.png) !important;
+  background-image: url(/assets/solvronix_desk/img/background.png) !important;
   background-size: cover;
   height: 100px !important;
   margin-bottom: -45px;

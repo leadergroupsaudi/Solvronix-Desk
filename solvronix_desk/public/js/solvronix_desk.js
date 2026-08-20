@@ -351,6 +351,7 @@
      9a. SETUP GUIDE BANNER (first-run, System Manager only)
   ──────────────────────────────────────────────────────────────────────────── */
   function injectSetupGuide() {
+    return; /* Setup guide widget disabled */
     /* Only System Manager */
     if (!frappe.user_roles || !frappe.user_roles.includes("System Manager")) return;
     if (document.getElementById("st-setup-guide")) return;
@@ -1149,6 +1150,7 @@
        still pending (current_route null — the initial route() hasn't resolved
        yet) do we wait for the "change" that resolution is guaranteed to fire. */
     var checkAndRedirectHome = function () {
+      if (!(frappe.boot && frappe.boot.home_page === "smart-home")) return;
       var route = (frappe.get_route && frappe.get_route()) || [];
       var isEmptyOrWorkspace = route.length === 0 ||
         (route.length === 1 && (route[0] === "" || route[0] === "workspace"));
